@@ -10,7 +10,7 @@ class Triangle
 
     return "三角形でない" if remains.size == 2 && remains[0] + remains[1] <= longest_side
 
-    return "正三角形"     if side1 = side2 && side2 == side3
+    return "正三角形"     if side1 == side2 && side2 == side3
     return "二等辺三角形" if remains.size == 1
     "不等辺三角形"
   end

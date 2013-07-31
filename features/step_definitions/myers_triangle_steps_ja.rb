@@ -3,7 +3,7 @@
 require File.expand_path('../../../models/triangle', __FILE__)
 
 前提 /^3辺の長さが "(.*?)" "(.*?)" "(.*?)"$/ do |side1, side2, side3|
-  @sides = [side1, side2, side3]
+  @sides = [side1.to_i, side2.to_i, side3.to_i]
 end
 
 ならば /^三角形は "(.*?)" である$/ do |triangle_type|
